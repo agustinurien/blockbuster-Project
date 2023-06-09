@@ -21,8 +21,22 @@ body{
 
 }
 
+.buscar{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.buscar i{
+    font-size: 15px;
+    color:  rgb(253, 193, 52);
+}
+
 .barraNav{
-    width: 250px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 50, 199);
+    border: none;
+    border-bottom: solid 1px  rgb(255, 183, 15);
 }
 
 .top10{
@@ -33,7 +47,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: aqua;
-    background-image: url(../images/padrino.jpg);
+    background-image: url(../img/padrino.jpg);
     background-position-x: center;
     background-position-y: 10%;
     background-repeat: no-repeat;
@@ -56,24 +70,58 @@ body{
     margin-bottom: 0px;
 }
 
-.parrafoPelicula{
-    margin-top: 0px;
+.parrafPelicula{
+    font-size: xx-small;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
+.botones button{
+    margin-right: 2px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+i{
+    color: rgb(255, 255, 255);
+    font-size: 27px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i:hover{
+    color: rgb(255, 183, 15);
+}
 
 /* peliculas*/
 
 .seccionPeliculas{
     padding-top: 20px;
     background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 3px;
 }
 
 .seccionPeliculas button{
     flex: 0 0 auto;
-    width: 100px;
-    height: 120px;
+    width: auto; 
+    height: auto;
+    border: none;
+    background-color: transparent;
+    padding: 3px;
+}
+
+.seccionPeliculas div{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.seccionPeliculas button img{
+    width: 100px; 
+    height: 140px;
+    border-radius: 2px;
 }
