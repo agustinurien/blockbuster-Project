@@ -1,33 +1,94 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+header{
+    background-color:rgb(23, 50, 199);
+    padding: 9px;
+    padding-top: 13px;
+    border-bottom: 3px solid rgb(255, 183, 15);
+}
+
+header a{
+    color: rgb(235, 167, 9);
+    padding: 4px;
+}
+
 .profile-icon {
+    color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 18%;
-    font-size: large;
-    font-size: 50px;
+    gap: 10px;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.profile-icon button{
+    color: #fff;
+    background-color: #000000;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    font-size: 45px;
+    border: solid rgb(255, 183, 15) 1px;
 }
 
 .options-list {
-    background-color: #fff;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0%;
+    padding: 0px;
+    gap: 30px;
 }
 
 .options-list li {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     padding: 10px;
-    font-size: larger;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
 }
 
 .options-list li a {
     color: inherit;
     text-decoration: none;
+    
+}
+
+.options-list li i {
+    padding-top: 3px;
+    font-size: 20px;
+}
+
+.options-list .changeP a{
+    font-size: 20px;
+    color: #fff;
 }
 
 .settings-icon {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 15px;
+
+}
+
+.settings-icon button{
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    color: rgb(255, 183, 15);
     font-size: 30px;
 }
+
+
