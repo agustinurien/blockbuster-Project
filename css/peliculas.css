@@ -40,18 +40,15 @@ header a{
     border-bottom: solid 1px  rgb(255, 183, 15);
 }
 
-.peliculaFondo{
+.contenedorPelicula{
     height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 37%;
-
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
-
-
 
 .contenidoPelicula{
     display: flex;
@@ -60,6 +57,7 @@ header a{
     justify-content: center;
     align-items: center;
 }
+
 
 .tituloPeliculas{
     margin: 0px;

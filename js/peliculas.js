@@ -5,35 +5,46 @@ const peliculas = [
     { nombre: "Titanic", resumen: "lorem", codigo: 4, class: "", img: "../img/titanic-1.jpg" },
 ];
 
-const pelicula = document.querySelector(".peliculaFondo");
+
 const botonPelicula = document.querySelectorAll(".pelicula")
 
 
 
 botonPelicula.forEach(boton => {
     boton.addEventListener("click", (e) => {
+        debugger
         const peliculaId = e.currentTarget.id;
         const peliculaSeleccionada = peliculas.find(pelicula => pelicula.codigo == peliculaId)
-        console.log(peliculaId);
-        console.log(peliculaSeleccionada);
 
-
+        localStorage.setItem("infoPelicula", JSON.stringify(peliculaSeleccionada));
         if (peliculaSeleccionada) {
-            const div = document.createElement("div");
-            div.classList.add("contenidoPelicula");
-            div.innerHTML = `
-        <h1 class="tituloPeliculas">${peliculaSeleccionada.nombre}</h1>
-        <p class="textoPelicula">${peliculaSeleccionada.resumen}</p>
-        <img src="${peliculaSeleccionada.img}" alt="${peliculaSeleccionada.nombre}" class="imagenPelicula">
-        `;
-            pelicula.append(div);
+            recuperarPelicula();
         }
+
     })
 });
 
 
 
+function recuperarPelicula() {
+    const peliculaFondo = document.querySelector(".seccionPelicula");
 
+    const peliculaRecuperada = JSON.parse(localStorage.getItem("infoPelicula"));
+    console.log(peliculaRecuperada);
+
+    const div = document.createElement("div");
+    div.classList.add("contenedorPelicula");
+    div.style.backgroundImage = `url(${peliculaRecuperada.img})`;
+    div.innerHTML = `
+    <div class="contenidoPelicula">
+        <h1 class="tituloPeliculas">${peliculaRecuperada.nombre}</h1>
+        <p class="textoPelicula">${peliculaRecuperada.resumen}</p>
+    </div>`;
+
+}
+
+const seccionPeli = document.querySelector(".seccionPelicula");
+console.log(seccionPeli);
 
 
 
