@@ -7,28 +7,23 @@ const peliculas = [
 
 
 const botonPelicula = document.querySelectorAll(".pelicula")
+const seccionPeli = document.querySelector(".seccionPelicula");
 
 
 
 botonPelicula.forEach(boton => {
     boton.addEventListener("click", (e) => {
-        debugger
+
         const peliculaId = e.currentTarget.id;
         const peliculaSeleccionada = peliculas.find(pelicula => pelicula.codigo == peliculaId)
 
         localStorage.setItem("infoPelicula", JSON.stringify(peliculaSeleccionada));
-        if (peliculaSeleccionada) {
-            recuperarPelicula();
-        }
-
     })
 });
 
-
+recuperarPelicula();
 
 function recuperarPelicula() {
-    const peliculaFondo = document.querySelector(".seccionPelicula");
-
     const peliculaRecuperada = JSON.parse(localStorage.getItem("infoPelicula"));
     console.log(peliculaRecuperada);
 
@@ -41,10 +36,10 @@ function recuperarPelicula() {
         <p class="textoPelicula">${peliculaRecuperada.resumen}</p>
     </div>`;
 
+    seccionPeli.append(div);
 }
 
-const seccionPeli = document.querySelector(".seccionPelicula");
-console.log(seccionPeli);
+
 
 
 
