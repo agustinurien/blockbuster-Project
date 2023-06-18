@@ -2,7 +2,7 @@ const peliculas = [
     { nombre: "The Notebook", resumen: "lorem", codigo: 1, class: "", img: "../img/diario de una pasion.jpg" },
     { nombre: "Notting Hill", resumen: "lorem", codigo: 2, class: "", img: "../img/nottin hill.jpg" },
     { nombre: "Pretty Woman", resumen: "lorem", codigo: 3, class: "", img: "../img/Pretty_Woman-716982233-large.jpg" },
-    { nombre: "Titanic", resumen: "lorem", codigo: 4, class: "", img: "../img/titanic-1.jpg" },
+    { nombre: "Titanic", resumen: "lorem", codigo: 4, class: "", img: "../img/titanic2.avif" },
 ];
 
 
