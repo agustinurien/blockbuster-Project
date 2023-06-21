@@ -18,6 +18,7 @@ botonPelicula.forEach(boton => {
         const peliculaSeleccionada = peliculas.find(pelicula => pelicula.codigo == peliculaId)
 
         localStorage.setItem("infoPelicula", JSON.stringify(peliculaSeleccionada));
+
     })
 });
 

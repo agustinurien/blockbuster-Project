@@ -54,10 +54,26 @@ header a{
     list-style: none;
     padding: 10px;
     font-size: 30px;
-    align-items: center;
     justify-content: center;
     gap: 7px;
     width: 100%;
+}
+
+.options-list li div{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+    width: 25vh;
+    height: 50px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+}
+
+.options-list li div:hover{
+    background-color: rgb(14, 14, 14);
 }
 
 .options-list li a {
@@ -91,4 +107,6 @@ header a{
     font-size: 30px;
 }
 
-
+.settings-icon button i:hover{
+    transform: rotate(-90deg);
+}
