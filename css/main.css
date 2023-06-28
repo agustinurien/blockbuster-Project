@@ -126,9 +126,16 @@ i:hover{
 
 /* peliculas*/
 
-.seccionPeliculas{
+
+.categoria{
+    color: white;
+    padding: 0px 20px 5px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.seccionPeliculas {
     padding-top: 20px;
-    background-color: rgb(0, 0, 0);
 }
 
 .seccionPeliculas button{
@@ -152,3 +159,4 @@ i:hover{
     height: 140px;
     border-radius: 2px;
 }
+
